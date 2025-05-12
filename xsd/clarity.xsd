@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema
+        xmlns="http://www.clarityhumanservices.com/schema/2024/1/clarity.xsd"
+        xmlns:hmis="http://www.clarityhumanservices.com/schema/2024/1/HUD_HMIS.xsd"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.clarityhumanservices.com/schema/2024/1/HUD_HMIS.xsd"
+        elementFormDefault="qualified"
+        attributeFormDefault="unqualified">
+    <xsd:redefine schemaLocation="http://www.clarityhumanservices.com/schema/2024/1/HUD_HMIS.xsd">
+        <xsd:complexType name="client">
+            <xsd:complexContent>
+
+                <xsd:extension base="hmis:client">
+                    <xsd:sequence>
+                        <xsd:element name="ClarityID" minOccurs="0"/>
+                        <xsd:element name="DisablingCondition" type="hmis:noYesReasonsForMissingData" minOccurs="0"/>
+                        <xsd:element name="ResidencePrior" type="hmis:livingSituation" minOccurs="0"/>
+                        <xsd:element name="ResidencePriorLengthOfStay" type="hmis:lengthOfStay" minOccurs="0"/>
+                        <xsd:element name="ZIPCode" minOccurs="0">
+                            <xsd:complexType>
+                                <xsd:sequence>
+                                    <xsd:element name="ZIP" type="hmis:zipCode"/>
+                                    <xsd:element name="ZIPQualityCode" type="hmis:zIPQualityCodeBase"/>
+                                </xsd:sequence>
+                            </xsd:complexType>
+                        </xsd:element>
+                        <xsd:element name="HouseholdIdentificationNumber" type="xsd:nonNegativeInteger" minOccurs="0"/>
+                        <xsd:element name="RelationshipToHoH" type="hmis:relationshipToHoH" minOccurs="0"/>
+                    </xsd:sequence>
+                </xsd:extension>
+            </xsd:complexContent>
+        </xsd:complexType>
+        <xsd:complexType name="serviceFAReferral">
+            <xsd:complexContent>
+                <xsd:extension base="hmis:serviceFAReferral">
+                    <xsd:sequence>
+                        <xsd:element name="ServiceEndDate" type="xsd:date" minOccurs="0"/>
+                        <xsd:element name="ServiceItemID" type="xsd:nonNegativeInteger" minOccurs="0"/>
+                    </xsd:sequence>
+                </xsd:extension>
+            </xsd:complexContent>
+        </xsd:complexType>
+
+
+        <xsd:complexType name="assessment">
+            <xsd:complexContent>
+                <xsd:extension base="hmis:assessment">
+                    <xsd:sequence>
+                        <xsd:element name="ScreenId" type="xsd:nonNegativeInteger" minOccurs="0"/>
+                        <xsd:element name="ScreenName" type="hmis:string250" minOccurs="0"/>
+                    </xsd:sequence>
+                </xsd:extension>
+            </xsd:complexContent>
+        </xsd:complexType>
+
+    </xsd:redefine>
+    <xsd:simpleType name="nameSuffix">
+        <xsd:restriction base="xsd:unsignedInt">
+            <xsd:enumeration value="1"/>
+            <xsd:enumeration value="8"/>
+            <xsd:enumeration value="9"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="zIPQualityCodeBase">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en">
+                ZIP Code Quality Code List
+                1 = Full or Partial Zip Code Reported
+                8 = Don't Know.
+                9 = Refused.
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:unsignedInt">
+            <xsd:enumeration value="1"/>
+            <xsd:enumeration value="8"/>
+            <xsd:enumeration value="9"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:element name="Client">
+        <xsd:complexType>
+            <xsd:complexContent>
+                <xsd:extension base="hmis:client"/>
+            </xsd:complexContent>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>
