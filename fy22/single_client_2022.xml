@@ -2,7 +2,8 @@
 <hmis:Sources 
     xmlns:airs="http://www.clarityhumanservices.com/schema/2020/1/AIRS_3_0_mod.xsd" 
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xmlns:hmis="http://www.clarityhumanservices.com/schema/2022/1/HUD_HMIS.xsd">
+    xmlns:hmis="http://www.clarityhumanservices.com/schema/2022/1/HUD_HMIS.xsd"
+    xsi:schemaLocation="../xml/xsd/clarity-xml.xsd">
   <hmis:Source>
     <hmis:SourceID>singleClientXml01</hmis:SourceID>
     <hmis:SourceType>1</hmis:SourceType>

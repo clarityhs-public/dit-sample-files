@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hmis:Sources 
+    xmlns:airs="http://www.clarityhumanservices.com/schema/2020/1/AIRS_3_0_mod.xsd" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:hmis="http://www.clarityhumanservices.com/schema/2024/1/HUD_HMIS.xsd"
+    xsi:schemaLocation="http://www.clarityhumanservices.com/schema/2024/1/HUD_HMIS.xsd ../../xml/fy24/xsd/clarity-xml.xsd">
+  <hmis:Source>
+    <hmis:SourceID>singleClientXml01</hmis:SourceID>
+    <hmis:SourceType>1</hmis:SourceType>
+    <hmis:SourceName>Single Client XML</hmis:SourceName>
+    <hmis:SoftwareName>Bitfocus Demo Data</hmis:SoftwareName>
+    <hmis:SoftwareVersion>1.0</hmis:SoftwareVersion>
+    <hmis:SourceContactEmail>demo@bitfocus.com</hmis:SourceContactEmail>
+    <hmis:SourceContactFirst>Demo</hmis:SourceContactFirst>
+    <hmis:SourceContactLast>Import</hmis:SourceContactLast>
+    <hmis:Export>
+      <hmis:ExportID>singleClientXml01</hmis:ExportID>
+      <hmis:ExportDate>2018-01-01T00:00:00</hmis:ExportDate>
+      <hmis:ExportPeriod>
+        <hmis:StartDate>2018-01-01</hmis:StartDate>
+        <hmis:EndDate>2018-12-31</hmis:EndDate>
+      </hmis:ExportPeriod>
+      <hmis:ExportPeriodType>3</hmis:ExportPeriodType>
+      <hmis:ExportDirective>2</hmis:ExportDirective>
+      <hmis:ImplementationID>2</hmis:ImplementationID>
+      <!-- Standard Client Data -->
+      <hmis:Client hmis:dateCreated="2018-01-01T00:00:00" hmis:dateUpdated="2018-01-01T00:00:00" hmis:userID="customFieldsUser01">
+        <hmis:PersonalID>singleClient01</hmis:PersonalID>
+        <hmis:FirstName hmis:hashStatus="1">Single</hmis:FirstName>
+        <hmis:MiddleName hmis:hashStatus="1"></hmis:MiddleName>
+        <hmis:LastName hmis:hashStatus="1">Client</hmis:LastName>
+        <hmis:NameDataQuality>1</hmis:NameDataQuality>
+        <hmis:SSN hmis:hashStatus="1">111111111</hmis:SSN>
+        <hmis:SSNDataQuality>1</hmis:SSNDataQuality>
+        <hmis:DOB>2000-01-01</hmis:DOB>
+        <hmis:DOBDataQuality>1</hmis:DOBDataQuality>
+        <hmis:AmIndAKNative>0</hmis:AmIndAKNative>
+        <hmis:Asian>1</hmis:Asian>
+        <hmis:BlackAfAmerican>0</hmis:BlackAfAmerican>
+        <hmis:HispanicLatinaeo>0</hmis:HispanicLatinaeo>
+        <hmis:MidEastNAfrican>0</hmis:MidEastNAfrican>
+        <hmis:NativeHIPacific>0</hmis:NativeHIPacific>
+        <hmis:White>0</hmis:White>
+        <hmis:Woman>0</hmis:Woman>
+        <hmis:Man>1</hmis:Man>
+        <hmis:NonBinary>0</hmis:NonBinary>
+        <hmis:CulturallySpecific>0</hmis:CulturallySpecific>
+        <hmis:Transgender>0</hmis:Transgender>
+        <hmis:Questioning>0</hmis:Questioning>
+        <hmis:DifferentIdentity>0</hmis:DifferentIdentity>
+        <hmis:VeteranStatus>0</hmis:VeteranStatus>
+      </hmis:Client>
+    </hmis:Export>
+  </hmis:Source>
+</hmis:Sources>
