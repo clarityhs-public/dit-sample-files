@@ -26,6 +26,7 @@
                         </xsd:element>
                         <xsd:element name="HouseholdIdentificationNumber" type="xsd:nonNegativeInteger" minOccurs="0"/>
                         <xsd:element name="RelationshipToHoH" type="hmis:relationshipToHoH" minOccurs="0"/>
+                        <xsd:element name="CustomClientElements" type="hmis:customClientElements" minOccurs="0"/>
                     </xsd:sequence>
                 </xsd:extension>
             </xsd:complexContent>
@@ -54,6 +55,78 @@
         </xsd:complexType>
 
     </xsd:redefine>
+    <xsd:complexType name="customClientElements">
+        <xsd:all minOccurs="0" maxOccurs="1"> 
+            <xsd:element name="c_demo_favorite_color" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation>Favorite Color. For Children's Cabinet Agency</xsd:documentation>
+                </xsd:annotation>
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:integer">
+                        <xsd:enumeration value="1">
+                            <xsd:annotation>
+                                <xsd:documentation>Blue</xsd:documentation>
+                            </xsd:annotation>
+                        </xsd:enumeration>
+                        <xsd:enumeration value="2">
+                            <xsd:annotation>
+                                <xsd:documentation>Green</xsd:documentation>
+                            </xsd:annotation>
+                         </xsd:enumeration>
+                        <xsd:enumeration value="8">
+                            <xsd:annotation>
+                                <xsd:documentation>Client doesn't know</xsd:documentation>
+                            </xsd:annotation>
+                        </xsd:enumeration>
+                        <xsd:enumeration value="9">
+                            <xsd:annotation>
+                                <xsd:documentation>Client prefers not to answer</xsd:documentation>
+                            </xsd:annotation>
+                        </xsd:enumeration>
+                        <xsd:enumeration value="99">
+                            <xsd:annotation>
+                                <xsd:documentation>Data not collected</xsd:documentation>
+                            </xsd:annotation>
+                        </xsd:enumeration>
+                    </xsd:restriction>  
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="c_demo_favorite_food" minOccurs="0">
+                <xsd:annotation>
+                    <xsd:documentation>Favorite Food. For children's after-school program</xsd:documentation>
+                </xsd:annotation>
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:integer">
+                        <xsd:enumeration value="1">
+                            <xsd:annotation>
+                                <xsd:documentation>Tacos</xsd:documentation>
+                            </xsd:annotation>
+                        </xsd:enumeration>
+                        <xsd:enumeration value="2">
+                            <xsd:annotation>
+                                <xsd:documentation>Pizza</xsd:documentation>
+                            </xsd:annotation>
+                         </xsd:enumeration>
+                        <xsd:enumeration value="8">
+                            <xsd:annotation>
+                                <xsd:documentation>Client doesn't know</xsd:documentation>
+                            </xsd:annotation>
+                        </xsd:enumeration>
+                        <xsd:enumeration value="9">
+                            <xsd:annotation>
+                                <xsd:documentation>Client prefers not to answer</xsd:documentation>
+                            </xsd:annotation>
+                        </xsd:enumeration>
+                        <xsd:enumeration value="99">
+                            <xsd:annotation>
+                                <xsd:documentation>Data not collected</xsd:documentation>
+                            </xsd:annotation>
+                        </xsd:enumeration>
+                    </xsd:restriction>  
+                </xsd:simpleType>
+            </xsd:element>
+        </xsd:all>
+    </xsd:complexType>
     <xsd:simpleType name="nameSuffix">
         <xsd:restriction base="xsd:unsignedInt">
             <xsd:enumeration value="1"/>

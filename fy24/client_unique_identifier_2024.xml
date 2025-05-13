@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<hmis:Sources 
+<hmis:Sources
     xmlns:hmis="http://www.clarityhumanservices.com/schema/2024/1/HUD_HMIS.xsd"
     xmlns:airs="http://www.clarityhumanservices.com/schema/2020/1/AIRS_3_0_mod.xsd" 
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
@@ -24,12 +24,13 @@
       <hmis:ExportPeriodType>3</hmis:ExportPeriodType>
       <hmis:ExportDirective>2</hmis:ExportDirective>
       <hmis:ImplementationID>2</hmis:ImplementationID>
+
       <!-- Standard Client Data -->
       <hmis:Client hmis:dateCreated="2018-01-01T00:00:00" hmis:dateUpdated="2018-01-01T00:00:00" hmis:userID="customFieldsUser01">
-        <hmis:PersonalID>singleClient01</hmis:PersonalID>
-        <hmis:FirstName hmis:hashStatus="1">Single</hmis:FirstName>
-        <hmis:MiddleName hmis:hashStatus="1"></hmis:MiddleName>
-        <hmis:LastName hmis:hashStatus="1">Client</hmis:LastName>
+        <hmis:PersonalID>clientUniqueIdentifier01</hmis:PersonalID>
+        <hmis:FirstName hmis:hashStatus="1">Client</hmis:FirstName>
+        <hmis:MiddleName hmis:hashStatus="1">Unique</hmis:MiddleName>
+        <hmis:LastName hmis:hashStatus="1">Identifier</hmis:LastName>
         <hmis:NameDataQuality>1</hmis:NameDataQuality>
         <hmis:SSN hmis:hashStatus="1">111111111</hmis:SSN>
         <hmis:SSNDataQuality>1</hmis:SSNDataQuality>
@@ -50,7 +51,11 @@
         <hmis:Questioning>0</hmis:Questioning>
         <hmis:DifferentIdentity>0</hmis:DifferentIdentity>
         <hmis:VeteranStatus>0</hmis:VeteranStatus>
+
+        <!-- Clarity Client Unique Identifier - allows mapping to an existing client directly -->
+        <hmis:ClarityID>22FEBA6F0</hmis:ClarityID>
       </hmis:Client>
+      
     </hmis:Export>
   </hmis:Source>
 </hmis:Sources>

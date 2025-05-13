@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<hmis:Sources xmlns:airs="http://www.clarityhumanservices.com/schema/2020/1/AIRS_3_0_mod.xsd" 
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-  xmlns:hmis="http://www.clarityhumanservices.com/schema/2024/1/HUD_HMIS.xsd"
-  xsi:schemaLocation="http://www.clarityhumanservices.com/schema/2024/1/HUD_HMIS.xsd ../../xml/fy24/xsd/clarity-xml.xsd">
+<hmis:Sources 
+    xmlns:airs="http://www.clarityhumanservices.com/schema/2020/1/AIRS_3_0_mod.xsd" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:hmis="http://www.clarityhumanservices.com/schema/2024/1/HUD_HMIS.xsd"
+    xsi:schemaLocation="http://www.clarityhumanservices.com/schema/2024/1/HUD_HMIS.xsd ../../xml/fy24/xsd/clarity.xsd"
+>
     <hmis:Source>
         <hmis:SourceID>singleClientXml01</hmis:SourceID>
         <hmis:SourceType>1</hmis:SourceType>
@@ -21,6 +23,7 @@
             </hmis:ExportPeriod>
             <hmis:ExportPeriodType>3</hmis:ExportPeriodType>
             <hmis:ExportDirective>2</hmis:ExportDirective>
+            <hmis:ImplementationID>3423</hmis:ImplementationID>
 
             <!-- Standard Client Data -->
             <hmis:Client hmis:dateCreated="2018-01-01T00:00:00" hmis:dateUpdated="2018-01-01T00:00:00" hmis:userID="customFieldsUser01">
@@ -48,12 +51,13 @@
                 <hmis:Questioning>0</hmis:Questioning>
                 <hmis:DifferentIdentity>0</hmis:DifferentIdentity>
                 <hmis:VeteranStatus>0</hmis:VeteranStatus>
-
                 <!-- Custom Client Profile Data -->
-                <hmis:CustomClientElements>
-                    <hmis:c_demo_favorite_color>Blue</hmis:c_demo_favorite_color>
-                    <hmis:c_demo_favorite_food>Tacos</hmis:c_demo_favorite_food>
-                </hmis:CustomClientElements>
+                 
+                 <!--<hmis:CustomClientElements>
+                    <hmis:c_demo_favorite_color>2</hmis:c_demo_favorite_color>
+                    <hmis:c_demo_favorite_food>99</hmis:c_demo_favorite_food>
+                </hmis:CustomClientElements>-->
+                <!--<hmis:ClarityID>1AS512MX</hmis:ClarityID>-->
             </hmis:Client>
 
             <!-- Standard Enrollment Data -->
@@ -67,10 +71,7 @@
                 <hmis:DisablingCondition>99</hmis:DisablingCondition>
 
                 <!-- Custom Enrollment Data -->
-                <hmis:CustomClientEnrollmentElements>
-                    <hmis:c_demo_favorite_color>Red</hmis:c_demo_favorite_color>
-                    <hmis:c_demo_favorite_food>Pizza</hmis:c_demo_favorite_food>
-                </hmis:CustomClientEnrollmentElements>
+                
             </hmis:Enrollment>
 
 
@@ -79,38 +80,8 @@
                 <hmis:ExitID>customFieldsExit01</hmis:ExitID>
                 <hmis:EnrollmentID>customFieldsEnrollment01</hmis:EnrollmentID>
                 <hmis:ExitDate>2018-03-01</hmis:ExitDate>
-                <hmis:Destination>20</hmis:Destination>
-
-                <!-- Custom Exit Data -->
-                <hmis:CustomClientEnrollmentElements>
-                    <hmis:c_demo_favorite_color>Green</hmis:c_demo_favorite_color>
-                    <hmis:c_demo_favorite_food>Grilled Cheese</hmis:c_demo_favorite_food>
-                </hmis:CustomClientEnrollmentElements>  
+                <hmis:Destination>99</hmis:Destination>
             </hmis:Exit>
-
-            <!-- Custom Status Assessment Data -->
-            <hmis:CustomClientProgramData hmis:dataCollectionStage="2" hmis:informationDate="2018-02-01" hmis:dateCreated="2018-02-01T00:00:00" hmis:dateUpdated="2018-02-01T00:00:00" hmis:userID="customFieldsUser01">
-                <hmis:CustomClientProgramDataID>customFieldsEnrollment01_DCS2_01</hmis:CustomClientProgramDataID>
-                <hmis:EnrollmentID>customFieldsEnrollment01</hmis:EnrollmentID>
-
-                <!-- Custom field values start here -->
-                <hmis:CustomClientEnrollmentElements>
-                    <hmis:c_demo_favorite_color>Yellow</hmis:c_demo_favorite_color>
-                    <hmis:c_demo_favorite_food>Pancakes</hmis:c_demo_favorite_food>
-                </hmis:CustomClientEnrollmentElements>
-            </hmis:CustomClientProgramData>
-
-            <!-- Custom Annual Assessment Data -->
-            <hmis:CustomClientProgramData hmis:dataCollectionStage="5" hmis:informationDate="2018-05-01" hmis:dateCreated="2018-05-01T00:00:00" hmis:dateUpdated="2018-05-01T00:00:00" hmis:userID="customFieldsUser01">
-                <hmis:CustomClientProgramDataID>customFieldsEnrollment01_DCS5_01</hmis:CustomClientProgramDataID>
-                <hmis:EnrollmentID>customFieldsEnrollment01</hmis:EnrollmentID>
-
-                <!-- Custom field values start here -->
-            <hmis:CustomClientEnrollmentElements>
-                <hmis:c_demo_favorite_color>Orange</hmis:c_demo_favorite_color>
-                <hmis:c_demo_favorite_food>Bacon</hmis:c_demo_favorite_food>
-            </hmis:CustomClientEnrollmentElements>
-            </hmis:CustomClientProgramData>
 
             <hmis:Organization hmis:dateCreated="2018-01-01T00:00:00" hmis:dateUpdated="2018-01-01T00:00:00" hmis:userID="demoUser01">
                 <hmis:OrganizationID>customFieldsOrganization01</hmis:OrganizationID>
@@ -128,13 +99,20 @@
                 <hmis:OperatingEndDate>2030-01-01</hmis:OperatingEndDate>
                 <hmis:ContinuumProject>1</hmis:ContinuumProject>
                 <hmis:ProjectType>1</hmis:ProjectType>
-                <hmis:TrackingMethod>0</hmis:TrackingMethod>
                 <hmis:PITCount>22</hmis:PITCount>
                 <hmis:HousingType>1</hmis:HousingType>
-                <hmis:HMISParticipatingProject>1</hmis:HMISParticipatingProject>
                 <hmis:TargetPopulation>4</hmis:TargetPopulation>
             </hmis:Project>
 
+            <!-- Custom field values start here -->
+            <!-- Custom Exit Data -->
+            <!-- Custom Status Assessment Data -->
+            <!--<hmis:CustomClientProgramData hmis:dataCollectionStage="2" hmis:informationDate="2018-02-01" hmis:dateCreated="2018-02-01T00:00:00" hmis:dateUpdated="2018-02-01T00:00:00" hmis:userID="customFieldsUser01">
+                    <hmis:CustomClientProgramDataID>customFieldsEnrollment01_DCS2_01</hmis:CustomClientProgramDataID>
+                    <hmis:EnrollmentID>customFieldsEnrollment01</hmis:EnrollmentID>
+                </hmis:CustomClientProgramData>-->
+            <!-- Custom Client Enrollments -->
+            <!-- Custom Annual Assessment Data -->
         </hmis:Export>
     </hmis:Source>
 </hmis:Sources>
