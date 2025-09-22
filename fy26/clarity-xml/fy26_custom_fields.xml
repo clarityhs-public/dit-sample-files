@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hmis:Sources xmlns:airs="http://www.clarityhumanservices.com/schema/2026/1/AIRS_3_0_mod.xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:hmis="http://www.clarityhumanservices.com/schema/2026/1/HUD_HMIS.xsd"
+    xsi:schemaLocation="http://www.clarityhumanservices.com/schema/2026/1/HUD_HMIS.xsd ../../fy26/clarity-xml/fy26_clarity_schema.xsd">
+    <hmis:Source>
+        <hmis:SourceID>GU-500</hmis:SourceID>
+        <hmis:SourceType>1</hmis:SourceType>
+        <hmis:SourceName>https://base.clarityhs.com</hmis:SourceName>
+        <hmis:SoftwareName>Clarity Human Services</hmis:SoftwareName>
+        <hmis:SoftwareVersion>1.0</hmis:SoftwareVersion>
+        <hmis:SourceContactEmail>vitaliy.kitsenko@bitfocus.com</hmis:SourceContactEmail>
+        <hmis:SourceContactFirst>Vitalii</hmis:SourceContactFirst>
+        <hmis:SourceContactLast>Kitsenko</hmis:SourceContactLast>
+        <hmis:SourceContactPhone>2022222484</hmis:SourceContactPhone>
+        <hmis:Export>
+            <hmis:ExportID>5564</hmis:ExportID>
+            <hmis:ExportDate>2025-08-04T04:50:13</hmis:ExportDate>
+            <hmis:ExportPeriod>
+                <hmis:StartDate>2025-07-01</hmis:StartDate>
+                <hmis:EndDate>2025-08-04</hmis:EndDate>
+            </hmis:ExportPeriod>
+            <hmis:ExportPeriodType>3</hmis:ExportPeriodType>
+            <hmis:ExportDirective>2</hmis:ExportDirective>
+            <hmis:ImplementationID>10013</hmis:ImplementationID>
+
+            <!-- Standard Client Data -->
+
+            <hmis:Client hmis:dateCreated="2025-07-31T04:30:58"
+                hmis:dateUpdated="2025-07-31T04:31:23" hmis:userID="1381">
+                <hmis:PersonalID>17376</hmis:PersonalID>
+                <hmis:FirstName hmis:hashStatus="1">Client 5</hmis:FirstName>
+                <hmis:MiddleName hmis:hashStatus="1">test</hmis:MiddleName>
+                <hmis:LastName hmis:hashStatus="1">Export</hmis:LastName>
+                <hmis:NameDataQuality>9</hmis:NameDataQuality>
+                <hmis:SSN hmis:hashStatus="1">xxxxxxxxx</hmis:SSN>
+                <hmis:SSNDataQuality>9</hmis:SSNDataQuality>
+                <hmis:DOB>2000-01-01</hmis:DOB>
+                <hmis:DOBDataQuality>2</hmis:DOBDataQuality>
+                <hmis:Sex>8</hmis:Sex>
+                <hmis:AmIndAKNative>0</hmis:AmIndAKNative>
+                <hmis:Asian>0</hmis:Asian>
+                <hmis:BlackAfAmerican>0</hmis:BlackAfAmerican>
+                <hmis:HispanicLatinao>0</hmis:HispanicLatinao>
+                <hmis:MidEastNAfrican>0</hmis:MidEastNAfrican>
+                <hmis:NativeHIPacific>0</hmis:NativeHIPacific>
+                <hmis:White>0</hmis:White>
+                <hmis:RaceNone>99</hmis:RaceNone>
+                <hmis:VeteranStatus>0</hmis:VeteranStatus>
+
+                <!-- Custom Client Profile Data -->
+
+                <!--<hmis:CustomClientElements>
+                    <hmis:c_demo_favorite_color>2</hmis:c_demo_favorite_color>
+                    <hmis:c_demo_favorite_food>99</hmis:c_demo_favorite_food>
+                </hmis:CustomClientElements>-->
+
+                <!--<hmis:ClarityID>1AS512MX</hmis:ClarityID>-->
+
+            </hmis:Client>
+
+            <!-- Standard Enrollment Data -->
+
+            <hmis:Enrollment hmis:dateCreated="2025-08-01T04:18:58"
+                hmis:dateUpdated="2025-08-01T04:18:58" hmis:userID="1381">
+                <hmis:EnrollmentID>34082</hmis:EnrollmentID>
+                <hmis:PersonalID>17376</hmis:PersonalID>
+                <hmis:ProjectID>2723</hmis:ProjectID>
+                <hmis:EntryDate>2025-07-27</hmis:EntryDate>
+                <hmis:HouseholdID>34779</hmis:HouseholdID>
+                <hmis:RelationshipToHoH>1</hmis:RelationshipToHoH>
+                <hmis:EnrollmentCoC>WA-TRA</hmis:EnrollmentCoC>
+                <hmis:LivingSituation>435</hmis:LivingSituation>
+                <hmis:RentalSubsidyType>433</hmis:RentalSubsidyType>
+                <hmis:LengthOfStay>11</hmis:LengthOfStay>
+                <hmis:LOSUnderThreshold>99</hmis:LOSUnderThreshold>
+                <hmis:DateToStreetESSH>2025-08-01</hmis:DateToStreetESSH>
+                <hmis:TimesHomelessPastThreeYears>1</hmis:TimesHomelessPastThreeYears>
+                <hmis:MonthsHomelessPastThreeYears>104</hmis:MonthsHomelessPastThreeYears>
+                <hmis:DisablingCondition>9</hmis:DisablingCondition>
+                <hmis:MentalHealthConsultation>3</hmis:MentalHealthConsultation>
+
+                <!-- Custom Enrollment Data -->
+
+                <!--<hmis:CustomEnrollmentElements>
+                    <hmis:c_demo_enrollment_reason>1</hmis:c_demo_enrollment_reason>
+                    <hmis:c_demo_enrollment_source>2</hmis:c_demo_enrollment_source>
+                </hmis:CustomEnrollmentElements>-->
+
+            </hmis:Enrollment>
+
+            <!-- Standard Exit Data -->
+
+            <hmis:Exit hmis:dateCreated="2025-08-04T04:48:01" hmis:dateUpdated="2025-08-04T04:48:01"
+                hmis:userID="1381">
+                <hmis:ExitID>74676</hmis:ExitID>
+                <hmis:EnrollmentID>34082</hmis:EnrollmentID>
+                <hmis:ExitDate>2025-08-04</hmis:ExitDate>
+                <hmis:Destination>118</hmis:Destination>
+
+            <!-- Custom Exit Data -->
+
+            <!--<hmis:CustomExitElements>
+                    <hmis:c_exit_destination_other>2</hmis:c_exit_destination_other>
+                    <hmis:c_exit_destination_detail>3</hmis:c_exit_destination_detail>
+            </hmis:CustomExitElements>-->
+
+            </hmis:Exit>
+
+            <!-- Standard Organization, Project, and Participation Data -->
+
+            <hmis:Organization hmis:dateCreated="2020-03-04T04:10:30"
+                hmis:dateUpdated="2025-07-08T04:04:59" hmis:userID="1381">
+                <hmis:OrganizationID>539</hmis:OrganizationID>
+                <hmis:OrganizationName>Test VIT_B</hmis:OrganizationName>
+                <hmis:OrganizationCommonName>Common</hmis:OrganizationCommonName>
+                <hmis:VictimServiceProvider>1</hmis:VictimServiceProvider>
+            </hmis:Organization>
+            <hmis:Participation hmis:dateCreated="2025-07-30T03:51:07"
+                hmis:dateUpdated="2025-07-30T03:51:07" hmis:userID="1381">
+                <hmis:HMISParticipationID>4261</hmis:HMISParticipationID>
+                <hmis:ProjectID>2723</hmis:ProjectID>
+                <hmis:HMISParticipationType>1</hmis:HMISParticipationType>
+                <hmis:HMISParticipationStatusStartDate>2025-03-01</hmis:HMISParticipationStatusStartDate>
+            </hmis:Participation>
+            <hmis:Project hmis:dateCreated="2025-07-30T03:51:06"
+                hmis:dateUpdated="2025-07-30T04:10:36" hmis:userID="1381">
+                <hmis:ProjectID>2723</hmis:ProjectID>
+                <hmis:OrganizationID>539</hmis:OrganizationID>
+                <hmis:ProjectName>!Report Program</hmis:ProjectName>
+                <hmis:ProjectCommonName>Test</hmis:ProjectCommonName>
+                <hmis:OperatingStartDate>2025-03-01</hmis:OperatingStartDate>
+                <hmis:ContinuumProject>0</hmis:ContinuumProject>
+                <hmis:ProjectType>1</hmis:ProjectType>
+                <hmis:HousingType>2</hmis:HousingType>
+                <hmis:TargetPopulation>3</hmis:TargetPopulation>
+                <hmis:HOPWAMedAssistedLivingFac>1</hmis:HOPWAMedAssistedLivingFac>
+            </hmis:Project>
+
+            <!-- Custom field values start here -->
+
+            <!-- Custom Status Assessment Data -->
+
+            <!--<hmis:CustomClientProgramData hmis:dataCollectionStage="2" hmis:informationDate="2018-02-01" hmis:dateCreated="2018-02-01T00:00:00" hmis:dateUpdated="2018-02-01T00:00:00" hmis:userID="customFieldsUser01">
+                    <hmis:CustomClientProgramDataID>customFieldsEnrollment01_DCS2_01</hmis:CustomClientProgramDataID>
+                    <hmis:EnrollmentID>customFieldsEnrollment01</hmis:EnrollmentID>
+                </hmis:CustomClientProgramData>-->
+
+            <!-- Custom Client Enrollments -->
+
+            <!-- Custom Annual Assessment Data -->
+
+        </hmis:Export>
+    </hmis:Source>
+</hmis:Sources>
