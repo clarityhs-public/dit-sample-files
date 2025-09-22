@@ -1,0 +1,2 @@
+ExportID,SourceType,SourceID,SourceName,SourceContactFirst,SourceContactLast,SourceContactPhone,SourceContactExtension,SourceContactEmail,ExportDate,ExportStartDate,ExportEndDate,SoftwareName,SoftwareVersion,CSVVersion,ExportPeriodType,ExportDirective,HashStatus,ImplementationID
+5786,1,GU-500;NV-502;SC-500;WA-500;WA-TRAIN,https://base.clarityhs.com,Vitalii,Kitsenko,4143238111,,vitaliy.kitsenko@bitfocus.com,2025-08-12 08:00:56,2025-08-01,2025-08-12,Clarity Human Services,1,2026 v1.0,3,2,1,10013

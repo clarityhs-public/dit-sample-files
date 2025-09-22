@@ -1,0 +1,4 @@
+ServicesID,EnrollmentID,PersonalID,DateProvided,RecordType,TypeProvided,OtherTypeProvided,MovingOnOtherType,SubTypeProvided,FAAmount,FAStartDate,FAEndDate,ReferralOutcome,DateCreated,DateUpdated,UserID,DateDeleted,ExportID
+s_41010,34092,17383,2025-08-03,152,18,,,,4000.00,2025-08-10,2025-08-11,,2025-08-11 08:56:07,2025-08-11 08:56:07,1381,,5786
+s_41014,34101,17389,2025-08-10,152,18,,,,4000.00,2025-08-10,2025-08-10,,2025-08-11 08:56:07,2025-08-11 08:56:07,1381,,5786
+s_41018,34102,17390,2025-08-11,141,6,,,,,,,,2025-08-11 08:56:07,2025-08-11 08:56:07,1381,,5786
