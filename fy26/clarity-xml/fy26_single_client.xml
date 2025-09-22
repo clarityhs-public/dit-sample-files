@@ -47,8 +47,7 @@
                 <hmis:RaceNone>99</hmis:RaceNone>
                 <hmis:VeteranStatus>0</hmis:VeteranStatus>
 
-                <!-- Clarity Client Unique Identifier - allows mapping to an existing client directly -->
-                <hmis:ClarityID>22FEBA6F0</hmis:ClarityID>
+
             </hmis:Client>
 
         </hmis:Export>

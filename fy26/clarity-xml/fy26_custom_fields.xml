@@ -6,12 +6,12 @@
     <hmis:Source>
         <hmis:SourceID>GU-500</hmis:SourceID>
         <hmis:SourceType>1</hmis:SourceType>
-        <hmis:SourceName>https://base.clarityhs.com</hmis:SourceName>
-        <hmis:SoftwareName>Clarity Human Services</hmis:SoftwareName>
+        <hmis:SourceName>Compania Data Warehouse</hmis:SourceName>
+        <hmis:SoftwareName>Extosoft Software</hmis:SoftwareName>
         <hmis:SoftwareVersion>1.0</hmis:SoftwareVersion>
-        <hmis:SourceContactEmail>vitaliy.kitsenko@bitfocus.com</hmis:SourceContactEmail>
-        <hmis:SourceContactFirst>Vitalii</hmis:SourceContactFirst>
-        <hmis:SourceContactLast>Kitsenko</hmis:SourceContactLast>
+        <hmis:SourceContactEmail>wanjiru.adekunle@compania.com</hmis:SourceContactEmail>
+        <hmis:SourceContactFirst>Wanjiru</hmis:SourceContactFirst>
+        <hmis:SourceContactLast>Adekunle</hmis:SourceContactLast>
         <hmis:SourceContactPhone>2022222484</hmis:SourceContactPhone>
         <hmis:Export>
             <hmis:ExportID>5564</hmis:ExportID>
