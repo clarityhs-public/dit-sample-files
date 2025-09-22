@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hmis:Sources xmlns:airs="http://www.clarityhumanservices.com/schema/2026/1/AIRS_3_0_mod.xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:hmis="http://www.clarityhumanservices.com/schema/2026/1/HUD_HMIS.xsd"
+    xsi:schemaLocation="http://www.clarityhumanservices.com/schema/2026/1/HUD_HMIS.xsd ../../fy26/clarity-xml/fy26_clarity_schema.xsd">
+    <hmis:Source>
+        <hmis:SourceID>GU-500</hmis:SourceID>
+        <hmis:SourceType>1</hmis:SourceType>
+        <hmis:SourceName>https://base.clarityhs.com</hmis:SourceName>
+        <hmis:SoftwareName>Clarity Human Services</hmis:SoftwareName>
+        <hmis:SoftwareVersion>1.0</hmis:SoftwareVersion>
+        <hmis:SourceContactEmail>vitaliy.kitsenko@bitfocus.com</hmis:SourceContactEmail>
+        <hmis:SourceContactFirst>Vitalii</hmis:SourceContactFirst>
+        <hmis:SourceContactLast>Kitsenko</hmis:SourceContactLast>
+        <hmis:SourceContactPhone>2022222484</hmis:SourceContactPhone>
+        <hmis:Export>
+            <hmis:ExportID>5564</hmis:ExportID>
+            <hmis:ExportDate>2025-08-04T04:50:13</hmis:ExportDate>
+            <hmis:ExportPeriod>
+                <hmis:StartDate>2025-07-01</hmis:StartDate>
+                <hmis:EndDate>2025-08-04</hmis:EndDate>
+            </hmis:ExportPeriod>
+            <hmis:ExportPeriodType>3</hmis:ExportPeriodType>
+            <hmis:ExportDirective>2</hmis:ExportDirective>
+            <hmis:ImplementationID>10013</hmis:ImplementationID>
+            
+            <!-- Standard Client Data -->
+            <hmis:Client hmis:dateCreated="2025-07-31T04:30:58"
+                hmis:dateUpdated="2025-07-31T04:31:23" hmis:userID="1381">
+                <hmis:PersonalID>17376</hmis:PersonalID>
+                <hmis:FirstName hmis:hashStatus="1">Client 5</hmis:FirstName>
+                <hmis:MiddleName hmis:hashStatus="1">test</hmis:MiddleName>
+                <hmis:LastName hmis:hashStatus="1">Export</hmis:LastName>
+                <hmis:NameDataQuality>9</hmis:NameDataQuality>
+                <hmis:SSN hmis:hashStatus="1">xxxxxxxxx</hmis:SSN>
+                <hmis:SSNDataQuality>9</hmis:SSNDataQuality>
+                <hmis:DOB>2000-01-01</hmis:DOB>
+                <hmis:DOBDataQuality>2</hmis:DOBDataQuality>
+                <hmis:Sex>8</hmis:Sex>
+                <hmis:AmIndAKNative>0</hmis:AmIndAKNative>
+                <hmis:Asian>0</hmis:Asian>
+                <hmis:BlackAfAmerican>0</hmis:BlackAfAmerican>
+                <hmis:HispanicLatinao>0</hmis:HispanicLatinao>
+                <hmis:MidEastNAfrican>0</hmis:MidEastNAfrican>
+                <hmis:NativeHIPacific>0</hmis:NativeHIPacific>
+                <hmis:White>0</hmis:White>
+                <hmis:RaceNone>99</hmis:RaceNone>
+                <hmis:VeteranStatus>0</hmis:VeteranStatus>
+
+                <!-- Clarity Client Unique Identifier - allows mapping to an existing client directly -->
+                <hmis:ClarityID>22FEBA6F0</hmis:ClarityID>
+            </hmis:Client>
+            
+        </hmis:Export>
+    </hmis:Source>
+</hmis:Sources>
