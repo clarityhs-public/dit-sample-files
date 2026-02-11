@@ -1,0 +1,6 @@
+ProjectID,OrganizationID,ProjectName,ProjectCommonName,OperatingStartDate,OperatingEndDate,ContinuumProject,ProjectType,HousingType,RRHSubType,ResidentialAffiliation,TargetPopulation,HOPWAMedAssistedLivingFac,PITCount,DateCreated,DateUpdated,UserID,DateDeleted,ExportID
+"312","1","ESG Homeless Prevention","",2011-05-01,,1,12,,,,4,2,,2014-01-01 00:00:00,2019-04-30 10:48:08,"4538",,"56947"
+"647","1","RHY Test Program","",2017-01-01,2050-01-01,1,0,1,,,4,2,0,2017-01-18 15:11:14,2023-09-26 15:34:10,"7434",,"56947"
+"272","248","Sac Hand Up Program","",2013-09-01,2017-03-01,1,3,,,,4,2,3,2014-01-01 00:00:00,2016-05-19 10:21:19,"799",,"56947"
+"397","248","KSK Test Program","",2000-01-01,2020-01-01,1,7,,,,4,2,,2014-01-01 00:00:00,2016-10-03 22:15:40,"306",,"56947"
+"476","248","Sprint 21","",2014-07-01,2015-09-30,1,6,,,0,4,2,,2015-03-19 16:37:33,2016-10-04 09:27:18,"306",,"56947"

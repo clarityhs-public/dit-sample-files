@@ -1,0 +1,9 @@
+UserID,UserFirstName,UserLastName,UserPhone,UserExtension,UserEmail,DateCreated,DateUpdated,DateDeleted,ExportID
+"1","Admin","Admin",,,"admin@bitfocus.com",2014-01-01 00:00:00,2025-04-11 06:48:11,,"56947"
+"306","Tauri","Royce",,,"troyce@bitfocus.com",2014-01-01 00:00:00,2024-12-02 15:00:00,,"56947"
+"799","John","Talley deleted",,,"jtalley@clarityhumanservices.com",2014-01-01 00:00:00,2019-06-05 10:14:35,2019-06-05 10:14:35,"56947"
+"2405","John","Test deleted",,,"test@noemail.com",2014-01-01 00:00:00,2019-01-14 10:32:49,2019-01-14 10:32:49,"56947"
+"2599","John","Talley deleted",,,"jjtalley01@gmail.com",2015-01-02 16:49:42,2017-06-13 09:04:06,2017-06-13 09:04:06,"56947"
+"4538","Michael","Reed",,,"miker@bitfocus.com",2018-11-12 15:53:09,2025-03-12 06:48:15,,"56947"
+"7434","Allie","Pope Burger",,,"allieb@bitfocus.com",2023-03-13 09:37:27,2025-07-01 12:43:06,,"56947"
+"7595","Kelly","Robson",,,"kellyr@bitfocus.com",2023-06-01 15:50:50,2025-06-03 09:03:08,,"56947"

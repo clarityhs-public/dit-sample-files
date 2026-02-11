@@ -1,0 +1,6 @@
+CEParticipationID,ProjectID,AccessPoint,PreventionAssessment,CrisisAssessment,HousingAssessment,DirectServices,ReceivesReferrals,CEParticipationStatusStartDate,CEParticipationStatusEndDate,DateCreated,DateUpdated,UserID,DateDeleted,ExportID
+"499","272",0,,,,,0,2013-09-01,2017-03-01,2023-10-02 03:18:44,2023-10-02 03:18:44,"1",,"56947"
+"521","312",0,,,,,0,2011-05-01,,2023-10-02 03:18:44,2023-10-02 03:18:44,"1",,"56947"
+"577","397",0,,,,,0,2000-01-01,2020-01-01,2023-10-02 03:18:44,2023-10-02 03:18:44,"1",,"56947"
+"605","476",0,,,,,0,2014-07-01,2015-09-30,2023-10-02 03:18:44,2023-10-02 03:18:44,"1",,"56947"
+"42","647",0,,,,,0,2017-01-01,2050-01-01,2023-09-30 22:12:30,2023-09-30 22:12:30,"1",,"56947"

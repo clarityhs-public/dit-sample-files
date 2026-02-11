@@ -1,0 +1,2 @@
+ExportID,SourceType,SourceID,SourceName,SourceContactFirst,SourceContactLast,SourceContactPhone,SourceContactExtension,SourceContactEmail,ExportDate,ExportStartDate,ExportEndDate,SoftwareName,SoftwareVersion,CSVVersion,ExportPeriodType,ExportDirective,HashStatus,ImplementationID
+"56947",1,"Bitfocus","https://nevada-mig.clarityhs.com","Eric","Jahn",,,"ericj@bitfocus.com",2025-11-05 09:03:22,2025-10-01,2025-11-30,"Clarity Human Services","1.0","2026 v1.0",3,2,4,"329"
